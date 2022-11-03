@@ -1,3 +1,18 @@
+// Google map
+
+let map;
+let palmJumeirahLatLng = { lat: 25.112432, lng: 55.138977 };
+
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: palmJumeirahLatLng,
+    zoom: 8,
+  });
+}
+
+window.initMap = initMap;
+
+// ////////////////////
 // Partners Logo Slider
 
 $(".partners-slider").slick({
@@ -7,13 +22,13 @@ $(".partners-slider").slick({
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 2,
-  centerPadding: "250px",
+  centerPadding: "600px",
 
   responsive: [
     {
       breakpoint: 1140,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 4,
         slidesToScroll: 3,
         infinite: false,
         dots: false,
@@ -22,14 +37,14 @@ $(".partners-slider").slick({
     {
       breakpoint: 720,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 4,
         slidesToScroll: 2,
       },
     },
     {
       breakpoint: 540,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
@@ -43,7 +58,7 @@ $(".spot-slider").slick({
   dots: false,
   arrows: false,
   centerPadding: "250px",
-  slidesToShow: 4,
+  slidesToShow: 3,
   responsive: [
     {
       breakpoint: 720,
@@ -51,7 +66,7 @@ $(".spot-slider").slick({
         arrows: false,
         centerMode: true,
         centerPadding: "40px",
-        slidesToShow: 1,
+        slidesToShow: 2,
       },
     },
     {
@@ -74,7 +89,7 @@ $(".testimonials-slider").slick({
   centerMode: true,
   dots: false,
   arrows: false,
-  centerPadding: "300px",
+  centerPadding: "450px",
   slidesToShow: 1,
   responsive: [
     {
