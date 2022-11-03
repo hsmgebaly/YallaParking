@@ -6,7 +6,7 @@ let palmJumeirahLatLng = { lat: 25.112432, lng: 55.138977 };
 function initMap() {
   map = new google.maps.Map(document.getElementById("map"), {
     center: palmJumeirahLatLng,
-    zoom: 8,
+    zoom: 12,
   });
 }
 
