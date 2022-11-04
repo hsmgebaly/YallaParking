@@ -14,9 +14,7 @@ body {
 }
 
 /* Navigation Bar */
-.nav-left-side {
-  margin-right: 35rem;
-}
+
 .navbar-brand {
   max-height: 50px;
   width: auto;
@@ -30,12 +28,55 @@ body {
   color: #f18120;
 }
 
+.nav-left {
+  margin-left: 100px;
+  margin-right: 500px;
+}
+
+@media (max-width: 540px) {
+  .nav-left {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.login-btn {
+  background-color: transparent;
+  border: none;
+}
+
+/* Modal */
+
+.modal-header {
+  background-color: #f9f9f9;
+  height: 75px;
+}
+
+.modal-btn {
+  border: none;
+  background-color: #f18120;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.forgot {
+  text-decoration: none;
+  color: #444;
+  transition: all 0.3;
+}
+
+.forgot:hover {
+  color: #f18120;
+}
+
 /* //////////////////// */
 /* Main Section -Map- */
 .map-section {
   width: 100%;
   height: 450px;
-  margin-top: 95px;
+  margin-top: 75px;
 }
 
 #map {
@@ -331,7 +372,7 @@ body {
   color: #f18120;
 }
 
-/* Start Parking Space */
+/*  Parking Space */
 .parking {
   max-height: 400px;
   color: #fff;
@@ -354,7 +395,7 @@ body {
 .parking .container {
   position: relative;
   z-index: 10;
-  max-width: 650px;
+  max-width: 50%;
   margin: auto;
 }
 
