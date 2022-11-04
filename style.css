@@ -71,6 +71,11 @@ body {
   color: #f18120;
 }
 
+.form-control:focus {
+  border: 1px solid #f18120;
+  box-shadow: 0 0 3px #f18120;
+}
+
 /* //////////////////// */
 /* Main Section -Map- */
 .map-section {
@@ -89,7 +94,7 @@ body {
   padding: 20px;
   border-radius: 50px;
   width: 60%;
-  height: 12%;
+  height: 16%;
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, 0);
