@@ -41,7 +41,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="imgs/favicon/favicon-32x32.png"
+      href="imgs/favicon/favicon-32x32 original.png"
     />
 
     <!-- Add website as an Icon on Iphone home screen -->
@@ -62,11 +62,11 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- Owl Carousel -->
+    <!-- AOS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
@@ -168,6 +168,7 @@
           class="row text-center p-5 d-flex align-items-center justify-content-center how-boxes m-auto"
         >
           <div
+            data-aos="fade-right"
             class="box col how-box d-flex flex-column justify-content-center align-items-center"
           >
             <img
@@ -182,6 +183,7 @@
           </div>
 
           <div
+            data-aos="fade-up"
             class="box col how-box d-flex flex-column justify-content-center align-items-center"
           >
             <img
@@ -196,6 +198,7 @@
           </div>
 
           <div
+            data-aos="fade-left"
             class="box col how-box d-flex flex-column justify-content-around align-items-center"
           >
             <img
@@ -492,12 +495,12 @@
       </div>
       <div class="container text-center pt-5 m-auto how-description">
         <div class="row">
-          <div class="box col-12 col-sm-4">
+          <div class="box col-12 col-sm-4" data-aos="fade-right">
             <i class="bi bi-map how-icon"></i>
             <h5 class="mb-4 mt-4 how-title">List Parking</h5>
             <p class="how-text">Add your unused space & choose a price.</p>
           </div>
-          <div class="box col-12 col-sm-4">
+          <div class="box col-12 col-sm-4" data-aos="fade-up">
             <i class="bi bi-key how-icon"></i>
             <h5 class="mb-4 mt-4">Confirm</h5>
             <p>
@@ -505,7 +508,7 @@
               access card when you receive a booking.
             </p>
           </div>
-          <div class="box col-12 col-sm-4">
+          <div class="box col-12 col-sm-4" data-aos="fade-left">
             <i class="bi bi-cash-coin how-icon"></i>
             <h5 class="mb-4 mt-4">Earn</h5>
             <p>
@@ -680,7 +683,7 @@
     <!-- Google API -Map- -->
     <script
       async
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3WsEDhj7jscuNH4fSNnnJyfjYp2RzDrs&callback=initMap"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCezcWNm2JNpZ1EDiZpmmid4EkeLal4lFU&callback=initMap"
     ></script>
 
     <!-- Link Jquery JS CDN  -->
@@ -727,7 +730,7 @@
 
       // Your web app's Firebase configuration
       const firebaseConfig = {
-        apiKey: "AIzaSyD9XHxZrdBAGXvhTMQwc_kn1criOZCUN6I",
+        apiKey: "AIzaSyDUGX5GMMWJcdsG_vCurnSF3ZuYhHnBSYM",
         authDomain: "yalaparking.firebaseapp.com",
         projectId: "yalaparking",
         storageBucket: "yalaparking.appspot.com",
@@ -770,6 +773,21 @@
             const errorMessage = error.message;
             alert(errorMessage);
           });
+      });
+    </script>
+
+    <!-- AOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      AOS.init({
+        once: true,
+        duration: 1000,
       });
     </script>
 
